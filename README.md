@@ -4,4 +4,4 @@ The data analysis is structured in three levels of detail (macro, meso, micro). 
 Data files:
 - The flow data is obtained from the provided excel files and saved as complete csv files.
 - The data from the Arane data portal is obtained with an API in the code. 
-- The public transport data from NDOV needs to be retrieved day by day and placed in the NDOV folder (exact instructions in the micro analysis codes)
+- The public transport data from NDOV needs to be retrieved day by day and placed in the NDOV folder (exact instructions in the micro analysis codes). The chosen dataset is called kv6.
