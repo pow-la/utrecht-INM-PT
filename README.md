@@ -6,19 +6,22 @@ Data files:
 - The data from the Arane data portal is obtained with an API in the code. 
 - The public transport data from NDOV needs to be retrieved day by day and placed in the NDOV folder (exact instructions in the micro analysis codes). The chosen dataset is called kv6.
 
-Hereafter some exmaple plots: 
+Hereafter some example plots: 
 
 ## Macro analysis
-.. raw:: html
-
-    <img src="files/9468061/carflows_2months.pdf" width="600px">
-    
-[carflows_2months.pdf](https://github.com/pow-la/utrecht-INM-PT/files/9468061/carflows_2months.pdf)
-
+We analyse flow data over the period of two months to detect irregularities. Only workdays are considered.
+![alt text](Saved_plots/carflows_2months_7-19_uur.jpg)
     
 ## Meso analysis
-.. raw:: html
+We analyse the traffic behavior for one day. The data is averaged over 2 weeks to avoid irregularities of a specific day.
+![alt text](Saved_plots/carflows_pt_MARG_delay_2weeks_90.jpg)
 
-    <img src="trained_models/Milestone3/figures/Goal_GAN_dendorfer.png" width="600px">
+This second plot shows the marginal delay of a specific bus in a specific direction, together with the system status, and the queue length of cars.
+![alt text](Saved_plots/PT_queuelength_vri89_O_bus_u010_0.png)
 
 ## Micro analysis
+We look more specifically at the rushhour of the day, and analyse the correlation between the marginal delay of buses and the queue length of cars. 
+![alt text](Saved_plots/correlation_status_False_vri111_date_01-04-2022_17-04-2022_marg_delay_norm_yes.jpg)
+
+The time space diagram shows the trajectories of the buses (green and yellow) and the queue length (blue) at the intersection in the direction of the bus.
+![alt text](Saved_plots/timespace_time_15_to_16.png)
